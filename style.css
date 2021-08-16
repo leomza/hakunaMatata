@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-position-y: -75px;
+}
+
+.lion__image {
+  width: 400px;
+  position: absolute;
+  -webkit-transition: -webkit-transform 2.0s;
+  transition: -webkit-transform 2.0s;
+  transition: transform 2.0s;
+  transition: transform 2.0s, -webkit-transform 2.0s;
+  z-index: 1;
+}
+
+.title__image {
+  width: 800px;
+  position: relative;
+  left: 25%;
+  -webkit-animation: anima 4s alternate;
+          animation: anima 4s alternate;
+  display: none;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+@-webkit-keyframes anima {
+  from {
+    bottom: 250px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+@keyframes anima {
+  from {
+    bottom: 250px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

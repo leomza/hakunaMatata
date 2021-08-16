@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-position-y: -75px;
+}
+
+.lion__image {
+  width: 400px;
+  position: absolute;
+  transition: transform 2s;
+  z-index: 1;
+}
+
+.title__image {
+  width: 800px;
+  position: relative;
+  left: 25%;
+  animation: anima 4s alternate;
+  display: none;
+  filter: brightness(120%);
+}
+
+@keyframes anima {
+  from {
+    bottom: 250px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
